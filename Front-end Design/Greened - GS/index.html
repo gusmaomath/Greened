@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/e1b9e82d8a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Greened</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="Logo">
+                Greened
+            </a>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="sobre.html" class="nav-links">Sobre</a></li>
+                    <li><a href="sharefood.html" class="nav-links">ShareFood</a></li>
+                    <li><a href="preservetech.html" class="nav-links">PreserveTech</a></li>
+                    <li><a href="smarttrack.html" class="nav-links">SmartTrack</a></li>
+                    <li><a href="index.html#contato" class="nav-links">Contato</a></li>
+                    <li><a href="blog.html" class="nav-links">Blog</a></li>
+                </ul>
+            </div>
+            <div class="btns" id="btns">
+                <i class="fa-regular fa-moon" id="moon"></i>
+                <button class="button" id="form-open">Login</button>
+                
+                <div class="menuBtn">
+                    <i class="fa-solid fa-bars-staggered navBtn" id="openBtn"></i>
+                    <i class="fa-solid fa-xmark navBtn" id="closeBtn"></i>
+                </div>
+            </div>
+            <div class="circle" id="circle"></div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Pop up -->
+        <div class="container">
+            <div class="signin-signup">
+                <form action="" class="sign-in-form" id="loginForm">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Login" class="btn">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+                </form>
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <input type="submit" value="Sign up" class="btn">
+                    <p class="social-text">Or Sign up with social platform</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+                </form>
+            </div>
+            <div class="panels-container">
+                <div class="panel left-panel">
+                    <div class="content">
+                        <h3>Já é membro?</h3>
+                        <p style="color: rgba(245, 245, 245, 0.826);">Faça login agora para ter acesso a todas as funcionalidades exclusivas da nossa plataforma e aproveite ao máximo a sua experiência conosco!</p>
+                        <button class="btn" id="sign-in-btn">Sign in</button>
+                    </div>
+                    <img src="img/Sign in-pana.png" alt="personagem fazendo login" class="image">
+                </div>
+                <div class="panel right-panel">
+                    <div class="content">
+                        <h3>Novo aqui?</h3>
+                        <p style="color: rgba(245, 245, 245, 0.696);">Junte-se a nós! Cadastre-se agora para ter acesso a conteúdos exclusivos e ficar por dentro das novidades. Não perca mais tempo, registre-se já!</p>
+                        <button class="btn" id="sign-up-btn">Sign up</button>
+                    </div>
+                    <img src="img/Sign up-pana.png" alt="personagem se inscrevendo no site" class="image">
+                </div>
+            </div>
+        </div>
+
+        <section class="section1" id="home">
+            <img src="img/bg.jpg" class="bg-img" alt="campo agricola">
+            <img src="img/arco(8).png" class="arco" id="arco" alt="arco">
+            <div class="box1">
+                <h1>Alimente o Futuro: Sistema Integrado para Redução de Desperdício de Alimentos</h1>
+                <p>Rastreamento, Compartilhamento e Conservação Inteligente para um Mundo Sustentável</p>
+                <span>Role para baixo <i class="fa-solid fa-arrow-down fa-bounce"></i></span>
+            </div>
+        </section>
+
+        <section class="section2 sec">
+            <img src="img/desperdicio.jpg" class="img-sec" alt="comida estragada">
+            <div class="box2">
+                <h3>Sobre nós</h3>
+                <h1>Por um mundo com menos desperdício de alimentos</h1>
+                <p class="p">Estamos comprometidos em enfrentar o desafio global do desperdício de alimentos, fortalecer a agricultura e promover um futuro sustentável. Por meio de soluções inovadoras e tecnológicas, buscamos criar um impacto positivo ao longo de toda a cadeia de suprimentos alimentares. Junte-se a nós nessa jornada rumo a um mundo onde todos tenham acesso adequado a alimentos de qualidade, reduzindo o desperdício e promovendo a sustentabilidade. Descubra como você pode fazer a diferença conosco.</p>
+                <a href="sobre.html" class="btn-2">Sobre o projeto <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="section3 sec">
+            <div class="box3">
+                <h3>Nosso objetivo</h3>
+                <h1>Reduzindo o desperdício de alimentos e promovendo acesso sustentável</h1>
+                <p class="p">Nosso foco principal é reduzir o desperdício de alimentos ao longo da cadeia de suprimentos. Queremos implementar um sistema integrado para rastrear e compartilhar informações, além de usar tecnologias de conservação de alimentos. Também buscamos facilitar o acesso aos alimentos para aqueles que mais precisam, doando e redistribuindo os excedentes. Nosso objetivo é contribuir para um futuro mais sustentável, onde o desperdício seja reduzido e todos tenham acesso a uma alimentação adequada e saudável.</p>
+            </div>
+            <img src="img/objetivo.jpg" class="img-sec" alt="pessoas fazendo colheita">
+        </section>
+
+        <section class="section4 sec">
+            <h3>Pontos principais</h3>
+            <h1>O que oferecemos?</h1>
+            <div class="box4">
+                <div class="col-3" id="column1">
+                    <div class="text">
+                        <i class="fa-solid fa-location-dot i" id="i1"></i>
+                        <h2>SmartTrack</h2>
+                        <p>Implementação de sistemas de rastreamento tecnológicos, como códigos de barras, para acompanhar produtos agrícolas da fazenda ao consumidor final. Permite um controle eficiente da cadeia de suprimentos, identificando desperdício ou perdas.</p>
+                    </div>
+                    <a href="smarttrack.html" class="btn-mais">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="col-3">
+                    <i class="fa-regular fa-handshake i" id="icon2"></i>
+                    <h2>ShareFood</h2>
+                    <p>Desenvolvimento de uma plataforma online ou aplicativo para compartilhamento de informações entre agricultores, varejistas e organizações de caridade. O objetivo é facilitar a doação ou redistribuição de alimentos excedentes, evitando desperdícios e suprindo áreas com escassez de alimentos.</p>
+                    <a href="sharefood.html" class="btn-mais">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="col-3">
+                    <i class="fa-solid fa-boxes-stacked i"></i>
+                    <h2>PreserveTech</h2>
+                    <p>Pesquisa e promoção de tecnologias de conservação de alimentos, como desidratação, enlatamento, congelamento e processamento mínimo, para prolongar o armazenamento de alimentos perecíveis, reduzindo o desperdício e permitindo a distribuição em momentos de escassez.</p>
+                    <a href="preservetech.html" class="btn-mais">Saiba mais <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5 sec">
+            <h3>Benefícios</h3>
+            <h1>Por que deveríamos adotar esse projeto?</h1>
+            <input type="radio" name="opcao" id="op1" checked>
+            <input type="radio" name="opcao" id="op2">
+            <input type="radio" name="opcao" id="op3">
+            <input type="radio" name="opcao" id="op4">
+            <input type="radio" name="opcao" id="op5">
+            <div class="box5">
+                <div class="opcoes">
+                    <label for="op1"></label>
+                    <label for="op2"></label>
+                    <label for="op3"></label>
+                    <label for="op4"></label>
+                    <label for="op5"></label>
+                </div>
+                <img src="img/ben1.jpg" alt="prateleira de mercado cheia legumes e verduras frecos">
+                <div class="text">
+                    <h1>Redução do desperdício de alimentos</h1>
+                    <p>Ao implementar sistemas de rastreamento inteligente e compartilhamento de informações, podemos identificar pontos de desperdício ao longo da cadeia de suprimentos e tomar medidas para reduzi-lo, evitando perdas desnecessárias.</p>
+                    <a href="sobre.html">Mais sobre o projeto <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="ponto">
+                <img src="img/logo.png" alt="logo">
+                <p>Ao adotar esses benefícios, estamos construindo um futuro mais sustentável, onde o desperdício de alimentos é reduzido, a agricultura é fortalecida e todos têm acesso adequado a alimentos de qualidade.</p>
+            </div>
+        </section>
+
+        <section class="section6 sec">
+            <h3>Galeria</h3>
+            <h1>Explore nossa galeria de fotos</h1>
+            <div class="box6">
+                <div class="carrossel">
+                    <img src="img/gal1.jpg" alt="comércio local">
+                    <img src="img/gal2.jpg" alt="caminhão de carga">
+                    <img src="img/gal3.jpg" alt="mesa cheia de legumes">
+                    <img src="img/gal4.jpg" alt="metodo de preservamento de alimento">
+                    <img src="img/gal5.jpg" alt="armazenamento de comida">
+                    <img src="img/gal6.jpg" alt="diversos legumes distribuidos em tigelas">
+                </div>
+                <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </section>
+
+        <section class="section7 sec" id="contato">
+            <div class="box-img">
+                <img src="img/contato.jpg" alt="foto de campo agricola">
+                <img src="img/logo (1).png" id="logo-icon" alt="logo">
+            </div>
+            <div class="box7">
+                <div class="title">
+                    <h1>Entre em contato!</h1>
+                    <h2>Ou envie um email para: <span>contato@greened.com</span></h2>
+                </div>
+                <form action="contato.html" method="post" class="contact-form">
+                    <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" name="First Name" type="text" required>
+                        <label for="">Nome</label>
+                    </div>
+                    <div class="input-wrap">
+                        <input class="contact-input" autocomplete="off" name="Last Name" type="text" required>
+                        <label for="">Sobrenome</label>
+                    </div>
+                    <div class="input-wrap w-100">
+                        <input class="contact-input" autocomplete="off" name="Email" type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="input-wrap w-100">
+                        <input class="contact-input" pattern="[0-9]{10,11}" maxlength="11" autocomplete="off" name="Number" type="tel" required>
+                        <label for="">Telefone</label>
+                    </div>
+                    <div class="input-wrap w-100">
+                        <textarea name="Message" autocomplete="off" class="contact-input"></textarea>
+                        <label for="">Message</label>
+                    </div>
+                    <input type="submit" value="Enviar" class="btn w-100">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <a href="index.html" class="logo">
+                <img src="img/logo (1).png" alt="Logo">
+                Greened
+            </a>
+            <p>© 2023 Greened - Todos os direitos reservados.</p>
+        </div>
+        <div class="more">
+            <h2>Saiba mais</h2>
+            <div class="mini-menu">
+                <div class="col-2">
+                    <a href="sobre.html">Sobre</a>
+                    <a href="sharefood.html">ShareFood</a>
+                    <a href="preservetech.html">PreserveTech</a>
+                </div>
+                <div class="col-2">
+                    <a href="smarttrack.html">SmartTrack</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="index.html#contato">Contato</a>
+                </div>
+            </div>
+        </div>
+        <div class="newsletter">
+            <h2>Nosso Newsletter</h2>
+            <div class="contato-footer">
+                <input type="text" placeholder="Digite seu email">
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <p id="datetime"></p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
